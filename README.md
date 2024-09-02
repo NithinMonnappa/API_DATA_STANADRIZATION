@@ -136,36 +136,8 @@ pip install requests
 
 **Code**
 
-import requests
-import json
+![image](https://github.com/user-attachments/assets/6264f32a-0b50-4cfe-90e8-b74adac366df)
 
-# Define the API endpoint
-api_endpoint = 'https://your-api-url.com/api/v1/ingest'
-
-# Define the data payload
-data_payload = {
-    "data": {
-        "name": "John Doe",
-        "birthdate": "01-02-1980",
-        "address": "123 Elm Street"
-    },
-    "schema_id": "user_profile_v1"
-}
-
-# Send a POST request to the API
-response = requests.post(api_endpoint, json=data_payload)
-
-# Check if the request was successful
-if response.status_code == 200:
-    # Parse the JSON response
-    response_data = response.json()
-    print("Response Status:", response_data['status'])
-    print("Standardized Data:", json.dumps(response_data['standardized_data'], indent=4))
-    if 'warnings' in response_data:
-        print("Warnings:", response_data['warnings'])
-else:
-    print(f"Error: {response.status_code}")
-    print("Response Text:", response.text)
 
 
 **8.**Testing & Deployment****
