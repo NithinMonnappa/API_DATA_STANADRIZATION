@@ -1,4 +1,4 @@
-# API_DATA_STANADRIZATION
+# API DATA STANADRIZATION
 Creating a complex API for data standardization involves several steps, including defining the architecture, specifying the input and output formats, establishing the data transformation rules, and implementing validation, logging, and error-handling mechanisms.
 
 Below is a general blueprint for such an API, including the core components and functionalities.
